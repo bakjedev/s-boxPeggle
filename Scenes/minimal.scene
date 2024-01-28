@@ -34,7 +34,7 @@
       "Components": [
         {
           "__type": "SkyBox2D",
-          "SkyMaterial": null,
+          "SkyMaterial": "materials/skybox/light_test_sky_sunny02.vmat",
           "Tint": "0,0,0,1"
         }
       ]
@@ -183,7 +183,7 @@
           "__type": "ModelRenderer",
           "BodyGroups": 18446744073709551615,
           "MaterialGroup": null,
-          "MaterialOverride": "shinyball.vmat",
+          "MaterialOverride": "materials/shinyball.vmat",
           "Model": "models/dev/sphere.vmdl",
           "RenderType": "On",
           "Tint": "1,1,1,1"
@@ -194,7 +194,7 @@
           "IsTrigger": false,
           "Radius": 32,
           "Static": false,
-          "Surface": "bounce.surface"
+          "Surface": "surfaces/bounce.surface"
         },
         {
           "__type": "Rigidbody",
@@ -224,7 +224,8 @@
             "go": "7a3e97bb-7a89-4e58-9250-e1445ce32956",
             "component_type": "PointLight"
           },
-          "targetBall": "prefabs/targetball.prefab"
+          "targetBall": "prefabs/targetball.prefab",
+          "worldPanel": null
         },
         {
           "__type": "ScreenPanel",
@@ -255,6 +256,27 @@
               "Shadows": false
             }
           ]
+        }
+      ]
+    },
+    {
+      "Id": "968de5fa-6edb-4ac6-a033-bd943c08ce00",
+      "Name": "World",
+      "Position": "-89.36884,-93.54797,309.3828",
+      "Rotation": "0,0,-0.7071067,0.7071068",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "WorldPanel",
+          "HorizontalAlign": "Center",
+          "LookAtCamera": false,
+          "PanelSize": "512,512",
+          "RenderScale": 1,
+          "VerticalAlign": "Center"
+        },
+        {
+          "__type": "ComputerScreen",
+          "peggleBall": null
         }
       ]
     }

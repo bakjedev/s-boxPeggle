@@ -2,7 +2,6 @@ using Sandbox;
 using System;
 using System.Collections.Generic;
 using System.Numerics;
-
 public sealed class PeggleBall : Component, Component.ICollisionListener
 {
 	[Property]
@@ -14,11 +13,12 @@ public sealed class PeggleBall : Component, Component.ICollisionListener
 	[Property]
 	public GameObject targetBall { get; set; }
 
+	public List<GameObject> targetBalls = new();
+
 	private Vector3 startPos;
 	private bool resetting = false;
 	private bool won = false;
 
-	private List<GameObject> targetBalls = new();
 
 	protected override void OnStart()
 	{
@@ -31,6 +31,7 @@ public sealed class PeggleBall : Component, Component.ICollisionListener
 		{
 			o.NetworkSpawn();
 		}
+		
 	}
 
 	protected override void OnUpdate()

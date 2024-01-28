@@ -1,0 +1,16 @@
+@using Sandbox;
+@using Sandbox.UI;
+@inherits PanelComponent
+
+<root>
+	<div class="title">
+		<p>ballsLeft @(peggleBall.targetBalls.Count)</p>
+	</div>
+</root>
+
+@code
+{
+	[Property] public PeggleBall peggleBall;
+
+	protected override int BuildHash() => System.HashCode.Combine(Mouse.Position, peggleBall.targetBalls.Count);
+}
