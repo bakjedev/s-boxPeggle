@@ -1,0 +1,274 @@
+{
+  "Id": "72bc037e-defc-43b0-9f1f-c8e7c574580a",
+  "GameObjects": [
+    {
+      "Id": "3ee1c9f4-07be-4e0b-8b23-67bee2d8ec8a",
+      "Name": "Camera",
+      "Position": "2.065568,-183.514,295.4915",
+      "Rotation": "-0.00000001490117,0.00000001490117,0.7071067,0.7071069",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "CameraComponent",
+          "BackgroundColor": "0.33333,0.46275,0.52157,1",
+          "ClearFlags": "All",
+          "FieldOfView": 104.34,
+          "IsMainCamera": true,
+          "Orthographic": false,
+          "OrthographicHeight": 1536.7985,
+          "Priority": 1,
+          "RenderExcludeTags": "",
+          "RenderTags": "",
+          "TargetEye": "None",
+          "Viewport": "0,0,1,1",
+          "ZFar": 10000,
+          "ZNear": 10
+        }
+      ]
+    },
+    {
+      "Id": "16a565c5-c519-465c-9252-7332577ae40d",
+      "Name": "2D Skybox",
+      "Position": "-56.19177,-367.6731,693.8613",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "SkyBox2D",
+          "SkyMaterial": null,
+          "Tint": "0,0,0,1"
+        }
+      ]
+    },
+    {
+      "Id": "c20b31f7-309b-4d52-b8b2-9012f32e9c81",
+      "Name": "Box",
+      "Position": "-138.6285,-289.4554,782.4604",
+      "Enabled": true,
+      "Children": [
+        {
+          "Id": "496e2abc-e820-4ee0-814c-97109c8f671e",
+          "Name": "LeftWall",
+          "Position": "-276.3715,689.4554,-356.4604",
+          "Rotation": "0,-0.7071067,0,0.7071068",
+          "Scale": "34.17939,1,0.2252852",
+          "Enabled": true,
+          "Components": [
+            {
+              "__type": "ModelRenderer",
+              "BodyGroups": 18446744073709551615,
+              "MaterialGroup": null,
+              "MaterialOverride": null,
+              "Model": "models/dev/box.vmdl",
+              "RenderType": "On",
+              "Tint": "0.2093,0.20736,0.20736,1"
+            },
+            {
+              "__type": "BoxCollider",
+              "Center": "0,0,0",
+              "IsTrigger": false,
+              "Scale": "50,50,50",
+              "Static": false,
+              "Surface": null
+            }
+          ]
+        },
+        {
+          "Id": "e6fe9e52-89a7-477b-aa4e-94b3fde36bb9",
+          "Name": "BackWall",
+          "Position": "138.6285,721.1999,-363.1329",
+          "Rotation": "0.7071067,0,0,0.7071068",
+          "Scale": "17,33.62797,0.2252852",
+          "Enabled": true,
+          "Components": [
+            {
+              "__type": "ModelRenderer",
+              "BodyGroups": 18446744073709551615,
+              "MaterialGroup": null,
+              "MaterialOverride": null,
+              "Model": "models/dev/box.vmdl",
+              "RenderType": "On",
+              "Tint": "0.81395,0.81395,0.81395,1"
+            },
+            {
+              "__type": "BoxCollider",
+              "Center": "0,0,0",
+              "IsTrigger": false,
+              "Scale": "50,50,50",
+              "Static": false,
+              "Surface": null
+            }
+          ]
+        },
+        {
+          "Id": "6b5f8227-602e-4661-821a-ecb54b5d1924",
+          "Name": "Floor",
+          "Position": "138.6285,689.4554,-923.7785",
+          "Scale": "16.7308,1,0.2252852",
+          "Tags": "end",
+          "Enabled": true,
+          "Components": [
+            {
+              "__type": "ModelRenderer",
+              "BodyGroups": 18446744073709551615,
+              "MaterialGroup": null,
+              "MaterialOverride": null,
+              "Model": "models/dev/box.vmdl",
+              "RenderType": "On",
+              "Tint": "0.2093,0.20736,0.20736,1"
+            },
+            {
+              "__type": "BoxCollider",
+              "Center": "0,0,0",
+              "IsTrigger": false,
+              "Scale": "50,50,50",
+              "Static": false,
+              "Surface": null
+            }
+          ]
+        },
+        {
+          "Id": "54f6d9b7-68b1-4e78-a6ed-ee768b118946",
+          "Name": "RightWall",
+          "Position": "553.6285,689.4554,-356.4607",
+          "Rotation": "0,-0.7071067,0,0.7071068",
+          "Scale": "32.97937,1,0.2252852",
+          "Enabled": true,
+          "Components": [
+            {
+              "__type": "ModelRenderer",
+              "BodyGroups": 18446744073709551615,
+              "MaterialGroup": null,
+              "MaterialOverride": null,
+              "Model": "models/dev/box.vmdl",
+              "RenderType": "On",
+              "Tint": "0.2093,0.20736,0.20736,1"
+            },
+            {
+              "__type": "BoxCollider",
+              "Center": "0,0,0",
+              "IsTrigger": false,
+              "Scale": "50,50,50",
+              "Static": false,
+              "Surface": null
+            }
+          ]
+        },
+        {
+          "Id": "f0d08d4b-79d6-4bc3-b62a-b939530dac29",
+          "Name": "TopCollisionBox",
+          "Position": "157.6515,695.6562,-307.3184",
+          "Scale": "6.804372,13.03047,17.95996",
+          "Enabled": true,
+          "Components": [
+            {
+              "__type": "BoxCollider",
+              "Center": "-3.612938,-0.9437175,20.93861",
+              "IsTrigger": false,
+              "Scale": "125.3537,6.144634,0.2736664",
+              "Static": false,
+              "Surface": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Id": "78876f46-98b5-4473-82e4-2eeb454a9cdc",
+      "Name": "Ball",
+      "Position": "2.066,400,687.4863",
+      "Scale": "0.25,0.25,0.25",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "ModelRenderer",
+          "BodyGroups": 18446744073709551615,
+          "MaterialGroup": null,
+          "MaterialOverride": "shinyball.vmat",
+          "Model": "models/dev/sphere.vmdl",
+          "RenderType": "On",
+          "Tint": "1,1,1,1"
+        },
+        {
+          "__type": "SphereCollider",
+          "Center": "0,0,0",
+          "IsTrigger": false,
+          "Radius": 32,
+          "Static": false,
+          "Surface": "bounce.surface"
+        },
+        {
+          "__type": "Rigidbody",
+          "AngularDamping": 0,
+          "Gravity": false,
+          "LinearDamping": 0,
+          "Locking": {
+            "Y": true
+          },
+          "RigidbodyFlags": 0,
+          "StartAsleep": false
+        },
+        {
+          "__type": "PeggleBall",
+          "body": {
+            "_type": "component",
+            "go": "78876f46-98b5-4473-82e4-2eeb454a9cdc",
+            "component_type": "Rigidbody"
+          },
+          "camera": {
+            "_type": "component",
+            "go": "3ee1c9f4-07be-4e0b-8b23-67bee2d8ec8a",
+            "component_type": "CameraComponent"
+          },
+          "pointLight": {
+            "_type": "component",
+            "go": "7a3e97bb-7a89-4e58-9250-e1445ce32956",
+            "component_type": "PointLight"
+          },
+          "targetBall": "prefabs/targetball.prefab"
+        },
+        {
+          "__type": "ScreenPanel",
+          "AutoScreenScale": true,
+          "Opacity": 1,
+          "Scale": 1,
+          "ZIndex": 100
+        },
+        {
+          "__type": "VisibleCursor"
+        }
+      ],
+      "Children": [
+        {
+          "Id": "7a3e97bb-7a89-4e58-9250-e1445ce32956",
+          "Name": "Point Light",
+          "Position": "0,-809.767,0",
+          "Scale": "4,4,4",
+          "Enabled": true,
+          "Components": [
+            {
+              "__type": "PointLight",
+              "Attenuation": 0.07,
+              "FogMode": "Enabled",
+              "FogStrength": 1,
+              "LightColor": "1,1,1,1",
+              "Radius": 2000,
+              "Shadows": false
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "SceneProperties": {
+    "FixedUpdateFrequency": 50,
+    "Lerping": true,
+    "MaxFixedUpdates": 5,
+    "NetworkFrequency": 60,
+    "ThreadedAnimation": true,
+    "TimeScale": 1,
+    "UseFixedUpdate": true
+  },
+  "Title": "minimal",
+  "Description": "",
+  "__references": []
+}

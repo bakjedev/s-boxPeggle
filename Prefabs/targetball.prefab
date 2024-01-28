@@ -1,0 +1,33 @@
+{
+  "RootObject": {
+    "Id": "9e83e50b-3230-48c7-b53b-6eae910e2d9a",
+    "Name": "TargetBall1",
+    "Position": "170.6696,691.9937,-493.0548",
+    "Scale": "0.25,0.25,0.25",
+    "Tags": "target",
+    "Enabled": true,
+    "Components": [
+      {
+        "__type": "ModelRenderer",
+        "BodyGroups": 18446744073709551615,
+        "MaterialGroup": null,
+        "MaterialOverride": null,
+        "Model": "models/dev/sphere.vmdl",
+        "RenderType": "On",
+        "Tint": "1,0,0,1"
+      },
+      {
+        "__type": "SphereCollider",
+        "Center": "0,0,0",
+        "IsTrigger": false,
+        "Radius": 32,
+        "Static": false,
+        "Surface": "bounce.surface"
+      }
+    ]
+  },
+  "ShowInMenu": false,
+  "MenuPath": null,
+  "MenuIcon": null,
+  "__references": []
+}
